@@ -1,0 +1,12 @@
+{
+  "name": "image_manipulation",
+  "version": "0.0.0",
+  "author": {
+    "email": "anmolchhabra71500@gmail.com",
+    "name": "Anmol Chhabra"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "sharp": "^0.30.1"
+  }
+}

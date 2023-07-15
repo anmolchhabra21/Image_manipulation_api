@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docs</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    main {
+      padding: 1rem;
+    }
+    div {
+      margin: 1rem;
+    }
+    .eg {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+      width: 100%;
+    }
+  </style>
+  <body>
+    <main>
+      <h1>All routes</h1>
+        <h3>Important Parameter</h3>
+        <code>
+          /api/?url={image-url(working)} <br />
+        </code>
+        <h3>Additional Query Parameters</h3>
+        <code>
+          /api/?q={quality <=100 (Default: 60)} <br />
+          /api/?width={width} <br />
+          /api/?height={height} <br />
+          /api/?crop={contain, cover, fill, outside, inside} <br />
+          /api/?bw={black and white} <br />
+        </code>
+        <h3>Sample URL</h3>
+        <code>
+          http://localhost:5000/api/?format=jpeg&q=2&bw&height=10000&width=5000&crop=cover&url=https://res.cloudinary.com/dshtxwfwj/image/upload/v1648306669/ProjectWOC_ppx8rn.jpg
+        </code>
+      </div>
+    </main>
+  </body>
+</html>
