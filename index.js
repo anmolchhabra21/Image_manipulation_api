@@ -72,7 +72,16 @@ app.use("/api/", async (req, res, next) => {
       q = parseInt(q);
       if (q > 100) {
         return res.status(400).json({
-          message: "Invalid quality parameter. quality must be <=10000",
+          message: "Invalid quality parameter. quality must be <=100",
+        });
+      }
+    }
+
+    if(crop){
+      if(crop!=="contain" && crop!=="cover" && crop!=="fill" && crop!=="inside" && crop!=="outside"){
+        return res.status(400).json({
+          message:
+            "Invalid Format. This is not among the standard list Cover type",
         });
       }
     }
